@@ -1,5 +1,4 @@
 # UnfinishedIdeas' NVIM Config
-
 - Based heavily on the Primeagen's nvim config, this will customize nvim to be more useful for me
 - [Here is his video](https://youtu.be/w7i4amO_zaE?si=wcK-wCfFdXEkjh-d)
 - [Here is a link to his repo](https://github.com/ThePrimeagen/init.lua)
@@ -21,11 +20,25 @@
 - You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `:lua RoseMyPencils()` to change the color scheme of the editor
 - Install more themes in `/lua/ptronic/packer.lua`
 
+## Custom nvim keybinds
+
+| Key              | Description                                                                                                                               |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `J` or `K`       | Move highlighted lines up or down!                                                                                                        |
+| `<leader>p`      | When copy pasting over something: allow you to keep the copied string so you can keep pasting instead of changing to the highlighted word |
+| `<leader>y`      | This let's you do <leader>y to yank into your system clipboard!                                                                           |
+| `<leader>d`      | Deleting to void register in either visual or normal mode                                                                                 |
+| `<leader>f`      | Format the lsp? It runs `vim.lsp.buf.format`                                                                                              |
+| `<leader>s`      | Allows you to press space-s to start replacing the word you are on                                                                        |
+| `<leader>x`      | Makes your file executable, so just press this to make a bash script usable instead of going out and using chmod                          |
+<!--|                  |                                                                                                                                           |-->
+
+
 ## Custom Keybinds for Plugins
 
 `<leader>` key is set to `<space>`
 
-### General
+### Telescope
 
 | Key              | Description                                                                 |
 | ---------------- | --------------------------------------------------------------------------- |
@@ -40,6 +53,7 @@
 | `<leader>a`      | Start tracking a file with Harpoon                                          |
 | `<C-e>`          | Open the Harpoon menu                                                       |
 | `<C-h,j,k,l>`    | Select Harpoon'd file 1,2,3,4 (h,j,k,l)                                     |
+| `<C-i>`, `<C-o>` | Cycle left / right through Harpoon'd files (doesn't loop)                   |
 
 ### Undotree
 
