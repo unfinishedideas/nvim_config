@@ -18,7 +18,7 @@
 ## Custom lua functions
 
 - You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `:lua RoseMyPencils()` to change the color scheme of the editor
-- Install more themes in `/lua/ptronic/packer.lua`
+- Install more themes in `/lua/unfinishedideas/packer.lua`
 
 ## Custom nvim keybinds
 
@@ -88,6 +88,6 @@
 
 ## Making changes
 
-- If you want to make changes to the plugins you will generally do that in `/lua/ptronic/packer.lua`. Once you made your changes, be sure to shout it out with `:so` and then run `:PackerSync`
+- If you want to make changes to the plugins you will generally do that in `/lua/unfinishedideas/packer.lua`. Once you made your changes, be sure to shout it out with `:so` and then run `:PackerSync`
 - Configure and set shortcuts for individual plugins in `/after/plugin/nameOfPlugin.lua`
 
