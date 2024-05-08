@@ -4,9 +4,21 @@
 - [Here is his video](https://youtu.be/w7i4amO_zaE?si=wcK-wCfFdXEkjh-d)
 - [Here is a link to his repo](https://github.com/ThePrimeagen/init.lua)
 
+## Packages installed
+
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [undotree](https://github.com/mbbill/undotree)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+
+
 ## Custom lua functions
 
-- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `lua: PineMyPencils()` to change the color scheme of the editor
+- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `lua: RoseMyPencils()` to change the color scheme of the editor
 - Install more themes in `/lua/ptronic/packer.lua`
 
 ## Custom Keybinds for Plugins
