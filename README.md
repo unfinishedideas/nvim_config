@@ -22,6 +22,8 @@
 
 ## Custom nvim keybinds
 
+`<leader>` key is set to `<space>`
+
 | Key              | Description                                                                                                                               |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `J` or `K`       | Move highlighted lines up or down!                                                                                                        |
