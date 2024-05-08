@@ -18,7 +18,7 @@
 
 ## Custom lua functions
 
-- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `lua: RoseMyPencils()` to change the color scheme of the editor
+- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `:lua RoseMyPencils()` to change the color scheme of the editor
 - Install more themes in `/lua/ptronic/packer.lua`
 
 ## Custom Keybinds for Plugins
