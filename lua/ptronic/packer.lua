@@ -17,9 +17,9 @@ return require('packer').startup(function(use)
     use{
         "rose-pine/neovim",
         as = "rose-pine",
-        config = function()
-            vim.cmd('colorscheme rose-pine-main')
-        end
+        --config = function()
+            --vim.cmd('colorscheme rose-pine-main')
+        --end
         -- rose-pine-main <- preferred, rose-pine-moon, rose-pine-dawn
     }
     use{
@@ -40,6 +40,9 @@ return require('packer').startup(function(use)
     use{
         "sainnhe/everforest",
         as = "everforest",
+        config = function()
+            vim.cmd('colorscheme everforest')
+        end
         --
     }
 
