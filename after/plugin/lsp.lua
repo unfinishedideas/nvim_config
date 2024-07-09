@@ -14,6 +14,7 @@ require('mason-lspconfig').setup({
   ensure_installed = {
     "rust_analyzer",
     "pyright",
+    --  "csharp_ls",
     "omnisharp",
     "eslint",
     "clangd",
@@ -26,3 +27,4 @@ require('mason-lspconfig').setup({
     end,
   },
 })
+

@@ -28,6 +28,7 @@ if things are scary you can always :q!  ;)
 | `%`              | find matching parenthesis `)`, `]`, or `}`                                  |
 | `f` and `F`      | find the next or previous of something. f" goes to next " F" goes to prev " |
 | `w` or `b`       | navigate right / left by word can chain with numbers. ie 2w                 |
+| `<C-d>` `<C-u>`  | navigate half pages up and down                                             | 
 
 ## Deletion
 
@@ -93,7 +94,9 @@ if things are scary you can always :q!  ;)
 - You can type :help to get help
 - use `<C-w><C-w>` to jump between windows
 - use `<C-d>` while in command mode to see possible completions and press `<Tab>` to use one of them
-
+- You can fold / unfold (hide functions for instance) with zf + motion to fold and zo + motion to unfold
+- You can resize a panel with <C-w>+ and <C-w>- combine with motions: 10 <C-w>+ makes the window 10 lines taller
+- Similarly <C-w>> and <C-w>> are used for changing the width
 
 <!--
 Use this for making additional columns

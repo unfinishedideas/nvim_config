@@ -37,6 +37,11 @@ return require('packer').startup(function(use)
         as = "catppuccin",
         -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha <- preferred
     }
+    use {
+        "olimorris/onedarkpro.nvim",
+        as = "onedark",
+        -- onedark, onelight, onedark_vivid, onedark_dark
+    }
     use{
         "sainnhe/everforest",
         as = "everforest",
