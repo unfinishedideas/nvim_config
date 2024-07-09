@@ -93,12 +93,10 @@ if things are scary you can always :q!  ;)
   - ex. :set noic or :set invic
 - You can type :help to get help
 - use `<C-w><C-w>` to jump between windows
-- use `<C-w> +` `<C-w> -` to change window height
-- use `<C-w> >` `<C-w> <` to change window width
 - use `<C-d>` while in command mode to see possible completions and press `<Tab>` to use one of them
 - You can fold / unfold (hide functions for instance) with zf + motion to fold and zo + motion to unfold
-- You can resize a panel with <C-w>+ and <C-w>- combine with motions: 10 <C-w>+ makes the window 10 lines taller
-- Similarly <C-w>> and <C-w>> are used for changing the width
+- You can resize a panel with <C-w> + and <C-w> - combine with motions: 10 <C-w>+ makes the window 10 lines taller
+- Similarly <C-w> > and <C-w> > are used for changing the width
 
 <!--
 Use this for making additional columns
