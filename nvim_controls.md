@@ -92,6 +92,8 @@ if things are scary you can always :q!  ;)
   - ex. :set noic or :set invic
 - You can type :help to get help
 - use `<C-w><C-w>` to jump between windows
+- use `<C-w> +` `<C-w> -` to change window height
+- use `<C-w> >` `<C-w> <` to change window width
 - use `<C-d>` while in command mode to see possible completions and press `<Tab>` to use one of them
 
 
