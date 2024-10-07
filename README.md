@@ -86,6 +86,8 @@
 | `gl`             | Show diagnostics in a floating window                                       |
 | `[d` and `]d`    | Move to the previous / next diagnostic in the current buffer                |
 
+Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
+
 ## Making changes
 
 - If you want to make changes to the plugins you will generally do that in `/lua/unfinishedideas/packer.lua`. Once you made your changes, be sure to shout it out with `:so` and then run `:PackerSync`
