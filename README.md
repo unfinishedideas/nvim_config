@@ -88,8 +88,19 @@
 
 Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
+## Installation
+
+- You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` willl show you that `XDG_CONFIG_HOME` is the environment variable to set. 
+- You will have to install Packer: [README.md](https://github.com/wbthomason/packer.nvim?tab=readme-ov-file#quickstart)
+- Once installed, config files in place and `XDG_CONFIG_HOME` is pointed at the right place (you may need to set it in .bashrc or whatever shell you are using) - navigate to `/lua/unfinishedideas` and open `packer.lua` and run `:so` then `:PackerSync`.
+
 ## Making changes
 
 - If you want to make changes to the plugins you will generally do that in `/lua/unfinishedideas/packer.lua`. Once you made your changes, be sure to shout it out with `:so` and then run `:PackerSync`
 - Configure and set shortcuts for individual plugins in `/after/plugin/nameOfPlugin.lua`
+
+## Troubleshooting
+
+- Sometimes Treesitter will break - try running `:TSUpdate` to fix
 

@@ -71,6 +71,19 @@ if things are scary you can always :q!  ;)
 | `esc`            | normal mode                                                                 |
 | `v`              | visual selection                                                            |
 
+## While In File Browser
+
+| Key              | Description                                                                 |
+| ---------------- | --------------------------------------------------------------------------- |
+| `%`              | create a new file                                                           |
+| `d`              | make a directory                                                            |
+| `-`              | go up one directory                                                         |
+| `D`              | attempt to remove the file(s)/directory(ies)                                |
+| `gh`             | quick hide/unhide dot-files (ex .bashrc)                                    |
+| `o`              | enter the file/directory in a new browser window (horiz split)              |
+| `R`              | rename the file / folder                                                    |
+| `s`              | set the sorting style: by name, time, or file size                          |
+
 ## Misc
 
 | Key              | Description                                                                 |
