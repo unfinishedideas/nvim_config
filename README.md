@@ -103,4 +103,5 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 ## Troubleshooting
 
 - Sometimes Treesitter will break - try running `:TSUpdate` to fix
+- Sometimes the LSP will mess up the highlighting, use `:LspRestart` to fix it
 
