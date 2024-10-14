@@ -7,18 +7,23 @@
 
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [undotree](https://github.com/mbbill/undotree)
-- [vim-fugitive](https://github.com/tpope/vim-fugitive)
-- [harpoon](https://github.com/ThePrimeagen/harpoon)
-- [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [harpoon](https://github.com/ThePrimeagen/harpoon)
+- [undotree](https://github.com/mbbill/undotree)
 
+## No longer installed
 
-## Custom lua functions
+- [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
-- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestMyPencils()`, or `:lua RoseMyPencils()` to change the color scheme of the editor
-- Install more themes in `/lua/unfinishedideas/packer.lua`
+## Useful things
+
+- `:ToggleTerm` will open a terminal window for you!
+- You can run `:lua ColorMyPencils("colorscheme-name")`, `:lua ForestPencils()`, `:lua RoseMyPencils()`, `:lua DarkPencils()` and `:lua LightPencils()` to change the color scheme of the editor
+- Check out /lua/plugins/colors.lua for a list of colors / set up your own functions
 
 ## Custom nvim keybinds
 
@@ -26,7 +31,7 @@
 
 | Key              | Description                                                                                                                               |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `J` or `K`       | Move highlighted lines up or down!                                                                                                        |
+| `J` or `K`       | Move highlighted lines up or down! (while in visual mode)                                                                                 |
 | `<leader>p`      | When copy pasting over something: allow you to keep the copied string so you can keep pasting instead of changing to the highlighted word |
 | `<leader>y`      | This let's you do <leader>y to yank into your system clipboard!                                                                           |
 | `<leader>d`      | Deleting to void register in either visual or normal mode                                                                                 |
@@ -55,7 +60,7 @@
 | `<leader>a`      | Start tracking a file with Harpoon                                          |
 | `<C-e>`          | Open the Harpoon menu                                                       |
 | `<C-h,j,k,l>`    | Select Harpoon'd file 1,2,3,4 (h,j,k,l)                                     |
-| `<C-i>`, `<C-o>` | Cycle left / right through Harpoon'd files (doesn't loop)                   |
+| `<C-S-J>`, `<C-S-K>` | Cycle left / right through Harpoon'd files (doesn't loop)                   |
 
 ### Undotree
 
@@ -64,13 +69,7 @@
 | `<leader>u`      | Toggle the Undotree window                                                  |
 
 
-### Fugitive
-
-| Key              | Description                                                                 |
-| ---------------- | --------------------------------------------------------------------------- |
-| `<leader>gs`     | Toggle git stuff                                                            |
-
-### Lsp-Zero
+### Lsp-Zero (no longer installed!)
 
 | Key              | Description                                                                 |
 | ---------------- | --------------------------------------------------------------------------- |
@@ -104,4 +103,7 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
 - Sometimes Treesitter will break - try running `:TSUpdate` to fix
 - Sometimes the LSP will mess up the highlighting, use `:LspRestart` to fix it
+- When installing on windows, Treesitter HATES the compilers. See this [windows support page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support) for help
+- Sometimes you just need to go through and `:TSInstall {lang}` for each broken language you see having problems with `:checkhealth nvim-treesitter`
+- Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`
 
