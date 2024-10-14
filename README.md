@@ -105,4 +105,4 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 - When installing on windows, Treesitter HATES the compilers. See this [windows support page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support) for help
 - Sometimes you just need to go through and `:TSInstall {lang}` for each broken language you see having problems with `:checkhealth nvim-treesitter`
 - Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`
-
+- Something is currently wrong with it treesitter and markdown (.md) files. I don't know what it is but sometimes running `:TSInstall markdown` and re-opening the file temporarily fixes it
