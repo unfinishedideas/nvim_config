@@ -1,4 +1,5 @@
 # UnfinishedIdeas' NVIM Config
+
 - Based heavily on the Primeagen's nvim config, this will customize nvim to be more useful for me
 - [Here is his video](https://youtu.be/w7i4amO_zaE?si=wcK-wCfFdXEkjh-d)
 - [Here is a link to his repo](https://github.com/ThePrimeagen/init.lua)
@@ -11,12 +12,12 @@
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [undotree](https://github.com/mbbill/undotree)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
 ## No longer installed
 
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
-- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ## Useful things
@@ -60,7 +61,7 @@
 | `<leader>a`      | Start tracking a file with Harpoon                                          |
 | `<C-e>`          | Open the Harpoon menu                                                       |
 | `<C-h,j,k,l>`    | Select Harpoon'd file 1,2,3,4 (h,j,k,l)                                     |
-| `<C-S-J>`, `<C-S-K>` | Cycle left / right through Harpoon'd files (doesn't loop)                   |
+| `<C-S-J>`, `<C-S-K>` | Cycle left / right through Harpoon'd files (doesn't loop)               |
 
 ### Undotree
 
@@ -68,6 +69,13 @@
 | ---------------- | --------------------------------------------------------------------------- |
 | `<leader>u`      | Toggle the Undotree window                                                  |
 
+### Fugitive
+
+| Key              | Description                                                                 |
+| ---------------- | --------------------------------------------------------------------------- |
+| `<leader>p`      | Git push                                                                    |
+| `<leader>P`      | Git pull -- rebase                                                          |
+| `<leader>t`      | Git push -u origin                                                          |
 
 ### Lsp-Zero (no longer installed!)
 
@@ -90,8 +98,7 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 ## Installation
 
 - You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
-- Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` willl show you that `XDG_CONFIG_HOME` is the environment variable to set. 
-- Once installed, config files in place and `XDG_CONFIG_HOME` is pointed at the right place (you may need to set it in .bashrc or whatever shell you are using) - navigate to `/lua/unfinishedideas` and open `packer.lua` and run `:so` then `:PackerSync`.
+- Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
 
 ## Making changes
 
@@ -100,9 +107,9 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
 ## Troubleshooting
 
-- Sometimes Treesitter will break - try running `:TSUpdate` to fix
 - Sometimes the LSP will mess up the highlighting, use `:LspRestart` to fix it
+- Sometimes Treesitter will break - try running `:TSUpdate` to fix...
 - When installing on windows, Treesitter HATES the compilers. See this [windows support page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support) for help
 - Sometimes you just need to go through and `:TSInstall {lang}` for each broken language you see having problems with `:checkhealth nvim-treesitter`
-- Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`
-- Something is currently wrong with it treesitter and markdown (.md) files. I don't know what it is but sometimes running `:TSInstall markdown` and re-opening the file temporarily fixes it
+- Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`. I also suggest installing the `Zig` compiler for this on windows at least
+- Treesitter-Cpp doesn't work with windows apparently... to be honest, you are just gonna have to `TSInstall {lang}` every parser it seems. I have remove the "ensure installed" parsers
