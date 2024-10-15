@@ -1,7 +1,7 @@
 # UnfinishedIdeas' NVIM Config
 
 - Based heavily on the Primeagen's nvim config, this will customize nvim to be more useful for me
-- [Here is his video](https://youtu.be/w7i4amO_zaE?si=wcK-wCfFdXEkjh-d)
+- [Here is his video. Note: It is outdated now](https://youtu.be/w7i4amO_zaE?si=wcK-wCfFdXEkjh-d)
 - [Here is a link to his repo](https://github.com/ThePrimeagen/init.lua)
 
 ## Packages installed
