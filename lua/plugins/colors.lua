@@ -10,6 +10,11 @@ function ForestPencils()
     vim.cmd.colorscheme("everforest")
 end
 
+function NoClownPencils()
+    vim.o.background = "dark"
+    vim.cmd.colorscheme("no-clown-fiesta")
+end
+
 function DarkPencils()
     vim.o.background = "dark"
     vim.cmd.colorscheme("catppuccin-mocha")
@@ -55,6 +60,9 @@ return {
         config = function()
             ColorMyPencils()
         end
+    },
+    {
+        "aktersnurra/no-clown-fiesta.nvim",
     },
     {
         "ellisonleao/gruvbox.nvim",
