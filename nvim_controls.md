@@ -71,7 +71,7 @@ if things are scary you can always :q!  ;)
 | `esc`            | normal mode                                                                 |
 | `v`              | visual selection                                                            |
 
-## While In File Browser
+## While Navigating
 
 | Key              | Description                                                                 |
 | ---------------- | --------------------------------------------------------------------------- |

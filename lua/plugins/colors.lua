@@ -6,22 +6,22 @@ function ColorMyPencils(color)
 end
 
 function ForestPencils()
-    vim.o.background = "dark"
+    --vim.o.background = "dark"
     vim.cmd.colorscheme("everforest")
 end
 
 function NoClownPencils()
-    vim.o.background = "dark"
+    --vim.o.background = "dark"
     vim.cmd.colorscheme("no-clown-fiesta")
 end
 
 function DarkPencils()
-    vim.o.background = "dark"
+    --vim.o.background = "dark"
     vim.cmd.colorscheme("catppuccin-mocha")
 end
 
 function LightPencils()
-    vim.o.background = "light"
+    --vim.o.background = "light"
     vim.cmd.colorscheme("catppuccin-latte")
 end
 
