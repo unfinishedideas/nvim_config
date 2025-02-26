@@ -9,6 +9,7 @@
 - [tree-sitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [toggleterm](https://github.com/akinsho/toggleterm.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [harpoon](https://github.com/ThePrimeagen/harpoon)
 - [undotree](https://github.com/mbbill/undotree)
@@ -99,6 +100,7 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
 - You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 - Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
+- Make sure to install ripgrep for telescope to enable live file finding! [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Making changes
 
