@@ -40,6 +40,7 @@
 | `<leader>f`      | Format the lsp? It runs `vim.lsp.buf.format`                                                                                              |
 | `<leader>s`      | Allows you to press space-s to start replacing the word you are on                                                                        |
 | `<leader>x`      | Makes your file executable, so just press this to make a bash script usable instead of going out and using chmod                          |
+| `<leader>e`      | Shows you a readout of the error message in a floating window (`vim.diagnostic.open_float`)                                               |
 <!--|                  |                                                                                                                                           |-->
 
 

@@ -30,6 +30,11 @@ vim.keymap.set("n", "<C-l>", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<C-S-J>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-S-K>", function() harpoon:list():next() end)
 
+-- my stuff
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
+-- I'm not sure these are working...
+vim.keymap.set("n", "]d", vim.diagnostic.get_next)
+vim.keymap.set("n", "[d", vim.diagnostic.get_prev)
 
 -- Unused key commands from Primeagen ------------------------------------------
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")	-- allows you to press Ctrl-f and switch projects (no tmux on windows)
