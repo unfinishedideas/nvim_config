@@ -24,6 +24,7 @@
 ## Installation
 
 - You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- You need some kind of C compiler. On my windows machines I use `mingw`. On Windows, use the [Chocolatey Package Manager](https://chocolatey.org/) for this (and nvim). `choco install mingw`
 - Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
 - Make sure to install ripgrep for telescope to enable live file finding! `choco install ripgrep` [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
 - In order for Omnisharp to work you must have dot net installed and download a release from [Here!](https://github.com/OmniSharp/omnisharp-roslyn/releases)
