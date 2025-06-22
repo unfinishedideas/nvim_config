@@ -21,7 +21,7 @@ vim.g.clipboard = {
 require'lspconfig'.omnisharp.setup {
     -- !SET THIS TO THE ABSOLUTE PATH OF OMNISHARP ON YOUR SYSTEM! --
     --cmd = { "dotnet", "/path/to/omnisharp/OmniSharp.dll" },
-    cmd = { "dotnet", "c:/lib/omnisharp/OmniSharp.dll" },
+    cmd = { "dotnet", "d:/lib/omnisharp/OmniSharp.dll" },
 
     settings = {
       FormattingOptions = {

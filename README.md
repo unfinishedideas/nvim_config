@@ -101,8 +101,9 @@ Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
 - You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 - Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
-- Make sure to install ripgrep for telescope to enable live file finding! [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-- In order for Omnisharp to work you must have dot net installed and download a release from [Here!](https://github.com/OmniSharp/omnisharp-roslyn/releases) and make sure you update the path in `init.lua`
+- Make sure to install ripgrep for telescope to enable live file finding! `choco install ripgrep` [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
+- In order for Omnisharp to work you must have dot net installed and download a release from [Here!](https://github.com/OmniSharp/omnisharp-roslyn/releases)
+- Additionally, you must set the absolute path to `Omnisharp.dll` in `init.lua`
 
 ## Making changes
 
