@@ -21,6 +21,28 @@
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 - [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
+## Installation
+
+- You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
+- Make sure to install ripgrep for telescope to enable live file finding! `choco install ripgrep` [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
+- In order for Omnisharp to work you must have dot net installed and download a release from [Here!](https://github.com/OmniSharp/omnisharp-roslyn/releases)
+- Additionally, you must set the absolute path to `Omnisharp.dll` in `init.lua`
+- You need some kind of C compiler. On my windows machines I use `mingw`. On Windows, use the [Chocolatey Package Manager](https://chocolatey.org/) for this (and nvim). `choco install mingw`
+
+## Making changes
+
+- See instructions for adding plugins [at lazy.nvim](https://github.com/folke/lazy.nvim)
+- Basically create the appropriate lua file and run `:Lazy` to see the menu where you can install them
+
+## Troubleshooting
+
+- Sometimes the LSP will mess up the highlighting, use `:LspRestart` to fix it
+- Sometimes Treesitter will break - try running `:TSUpdate` to fix...
+- When installing on windows, Treesitter HATES the compilers. See this [windows support page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support) for help
+- Sometimes you just need to go through and `:TSInstall {lang}` for each broken language you see having problems with `:checkhealth nvim-treesitter`
+- Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`. I also suggest installing the `Zig` compiler for this on windows at least
+- Treesitter-Cpp doesn't work with windows apparently... to be honest, you are just gonna have to `TSInstall {lang}` every parser it seems. I have remove the "ensure installed" parsers
 ## Useful things
 
 - `:ToggleTerm` will open a terminal window for you!
@@ -97,23 +119,3 @@
 
 Note: use command `:LspRestart` to reset the LSP if the hightlighting gets off
 
-## Installation
-
-- You will have to install nvim: [INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md)
-- Once installed, put these configuration files where nvim expects them. On linux this might be `~/.config/nvim`. `:h rtp` will show you that `XDG_CONFIG_HOME` is the environment variable to set
-- Make sure to install ripgrep for telescope to enable live file finding! [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)
-- In order for Omnisharp to work you must have dot net installed and download a release from [Here!](https://github.com/OmniSharp/omnisharp-roslyn/releases) and make sure you update the path in `init.lua`
-
-## Making changes
-
-- See instructions for adding plugins [at lazy.nvim](https://github.com/folke/lazy.nvim)
-- Basically create the appropriate lua file and run `:Lazy` to see the menu where you can install them
-
-## Troubleshooting
-
-- Sometimes the LSP will mess up the highlighting, use `:LspRestart` to fix it
-- Sometimes Treesitter will break - try running `:TSUpdate` to fix...
-- When installing on windows, Treesitter HATES the compilers. See this [windows support page](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support) for help
-- Sometimes you just need to go through and `:TSInstall {lang}` for each broken language you see having problems with `:checkhealth nvim-treesitter`
-- Also note, you might need to install node.js (`choco install nodejs`). Be sure to `refreshenv`. I also suggest installing the `Zig` compiler for this on windows at least
-- Treesitter-Cpp doesn't work with windows apparently... to be honest, you are just gonna have to `TSInstall {lang}` every parser it seems. I have remove the "ensure installed" parsers
