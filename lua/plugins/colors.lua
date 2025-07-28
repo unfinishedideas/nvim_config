@@ -25,6 +25,26 @@ function LightPencils()
     vim.cmd.colorscheme("catppuccin-latte")
 end
 
+function RosePencils()
+    --vim.o.background = "dark"
+    vim.cmd.colorscheme("rose-pine-moon")
+end
+
+function DefaultPencils()
+    --vim.o.background = "dark"
+    vim.cmd.colorscheme("default")
+end
+
+function KanagawaPencils()
+    --vim.o.background = "dark"
+    vim.cmd.colorscheme("kanagawa")
+end
+
+function NordicPencils()
+    --vim.o.background = "dark"
+    vim.cmd.colorscheme("nordic")
+end
+
 return {
 
     {
@@ -34,6 +54,14 @@ return {
     {
         "rebelot/kanagawa.nvim",
         --name="kanagawa",
+    },
+    {
+        'AlexvZyl/nordic.nvim',
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require('nordic').load()
+        end
     },
     {
         "neanias/everforest-nvim",

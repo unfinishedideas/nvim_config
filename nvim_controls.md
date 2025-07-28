@@ -110,6 +110,7 @@ if things are scary you can always :q!  ;)
 - You can fold / unfold (hide functions for instance) with zf + motion to fold and zo + motion to unfold
 - You can resize a panel with `<C-w> +` and `<C-w> -` combine with motions: `10 <C-w> +` makes the window 10 lines taller
 - Similarly, `<C-w> >` and `<C-w> <` are used for changing the width
+- You can also use `<C-w> J` and `<C-w> K` to move windows up and down and `<C-w> H` and `<C-w> L` to move them left and right
 
 <!--
 Use this for making additional columns

@@ -1,7 +1,7 @@
 require("config.lazy")
 require("unfinishedideas")
 
-ForestPencils() -- Set color theme --
+NordicPencils() -- Set color theme --
 
 vim.g.clipboard = {
     name = 'win32yank-wsl',
@@ -62,3 +62,4 @@ require'lspconfig'.omnisharp.setup {
       },
     },
 }
+
